@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Serrato´s Kitchen" content="width=device-width, initial-scale=1.0">
+    <title>Serrato's Kitchen - ¡Caos culinario!</title>
+    <style>
+        :root {
+            --primary-red: #ff6b6b;
+            --primary-green: #4ecdc4;
+            --primary-white: #ffffff;
+            --text-dark: #2d3436;
+            --background-light: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-red), #ff9f43);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .features {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .features h2 {
+            color: var(--primary-red);
+            margin-bottom: 1.5rem;
+        }
+
+        .features ul {
+            list-style: none;
+        }
+
+        .features li {
+            margin: 1rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .features li::before {
+            content: "🍳";
+            position: absolute;
+            left: 0;
+        }
+
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .screenshot-container {
+            background: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .screenshot {
+            width: 100%;
+            height: 200px;
+            background: #ddd;
+            border-radius: 0.3rem;
+            object-fit: cover;
+        }
+
+        .download-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--primary-green), #2ecc71);
+            margin-top: 2rem;
+            border-radius: 1rem;
+        }
+
+        .download-button {
+            display: inline-block;
+            background: var(--primary-white);
+            color: var(--primary-green);
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .download-button:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .screenshots {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="hero-title">Serrato's Kitchen</h1>
+        <p class="hero-description">¡Sumérgete en el caos culinario más divertido! Prepara platos, coordina con tus amigos y sobrevive al frenesí de la cocina.</p>
+    </header>
+
+    <main class="container">
+        <section class="features">
+            <h2>Características del juego</h2>
+            <ul>
+                <li>Experiencia cooperativa multijugador para disfrutar con amigos</li>
+                <li>Inspirado en el exitoso juego Overcooked</li>
+                <li>Mecánicas simples pero desafiantes</li>
+                <li>Diseñado para generar momentos divertidos y caóticos</li>
+                <li>Versión beta con un nivel lleno de desafíos</li>
+            </ul>
+        </section>
+
+        <section class="screenshots">
+            <div class="screenshot-container">
+                <img src="./img/1.png" alt="Jugabilidad en la cocina" class="screenshot">
+                <p>Cocina frenética en acción</p>
+            </div>
+            <div class="screenshot-container">
+                <img src="./img/2.png" alt="Cooperación entre jugadores" class="screenshot">
+                <p>Trabajo en equipo es clave</p>
+            </div>
+            <div class="screenshot-container">
+                <img src="./img/3.png" alt="Nivel del juego" class="screenshot">
+                <p>Diseño único del nivel</p>
+            </div>
+        </section>
+
+        <section class="download-section">
+            <h2 style="color: white; margin-bottom: 1.5rem">¡Descarga ahora y únete a la diversión!</h2>
+            <a href="./descarga/Serrato´s Kitchen.rar" class="download-button">Descargar Serrato's Kitchen</a>
+        </section>
+    </main>
+</body>
+</html>
